@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Gomiiii ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ff9acb,#d59bff);
+overflow:hidden;
+text-align:center;
+color:white;
+}
+
+.container{
+margin-top:80px;
+padding:20px;
+}
+
+h1{
+font-size:42px;
+animation:zoom 2s infinite alternate;
+}
+
+p{
+font-size:20px;
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+button{
+margin-top:30px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4f8b;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+@keyframes zoom{
+from{transform:scale(1);}
+to{transform:scale(1.08);}
+}
+
+.balloon{
+position:absolute;
+font-size:35px;
+animation:float 8s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-120vh);}
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎉 Happy Birthday Gomiiii 😘❤️</h1>
+
+<p>
+May all your dreams come true this year, my thangoo. ❤️<br><br>
+
+I don't know whether I'm an important person in your life,
+but you are truly one of the most important people in mine. 🥹💖<br><br>
+
+Thank you for being such a beautiful part of my life.
+I wish you endless happiness, love and success.
+Have the happiest birthday ever! 🎂✨
+</p>
+
+<h2>🎂 One year older... One year more amazing! ❤️✨</h2>
+
+<button onclick="surprise()">🎁 Open Your Surprise</button>
+
+</div>
+
+<script>
+
+function surprise(){
+alert("Happy Birthday Once Again, Gomiiii! 😘❤️\n\nKeep Smiling... Stay Blessed Forever! 🎉✨");
+}
+
+let emojis=["🎈","❤️","✨"];
+
+for(let i=0;i<40;i++){
+
+let e=document.createElement("div");
+e.className="balloon";
+e.innerHTML=emojis[Math.floor(Math.random()*3)];
+
+e.style.left=Math.random()*100+"vw";
+e.style.animationDuration=(5+Math.random()*6)+"s";
+e.style.fontSize=(25+Math.random()*25)+"px";
+
+document.body.appendChild(e);
+
+}
+
+</script>
+
+</body>
+</html>
